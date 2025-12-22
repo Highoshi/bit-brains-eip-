@@ -68,10 +68,6 @@ The Bit Brains protocol intentionally prioritizes simplicity in its initial desi
 
 Additional mechanisms are intentionally deferred to future EIPs once the core Brain mechanics are validated.
 
-Non-Goals
-
-This EIP does not define token supply or distribution schedules, guarantee financial returns, specify reward formulas or yields, introduce offspring or productivity extensions, or encode final governance mechanisms.
-
 Rationale
 
 Epoch-based evaluation introduces accountability through time. Proof-of-care introduces alignment through action. Simplicity preserves legitimacy and long-term adaptability.

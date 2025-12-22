@@ -32,7 +32,7 @@ Epoch Duration
 
 Epochs apply to Brains as the foundational participation primitive of the protocol.
 
-Epoch length is approximately two (2) months. Epochs repeat continuously, and influence is evaluated at each epoch boundary.
+Epoch length is approximately one (1) months. Epochs repeat continuously, and influence is evaluated at each epoch boundary.
 
 Epoch duration is parameterized and may be adjusted in future EIPs, provided such changes remain consistent with the stewardship principles defined in EIP-0001.
 
@@ -71,6 +71,8 @@ Additional mechanisms are intentionally deferred to future EIPs once the core Br
 Rationale
 
 Epoch-based evaluation introduces accountability through time. Proof-of-care introduces alignment through action. Simplicity preserves legitimacy and long-term adaptability.
+
+Epoch rewards are allocated equally per Brain. Advancement to subsequent epochs and the release of associated rewards are contingent upon the Brain satisfying Proof-of-Care criteria. In cases where Proof-of-Care is insufficient, rewards remain locked and epoch progression is delayed until requirements are met. Rewards are neither slashed nor redistributed.
 
 Security Considerations
 

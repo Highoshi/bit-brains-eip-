@@ -76,11 +76,17 @@ Total Unlock Horizon: approximately 5 months
 
 ## Epoch-Based Unlock Schedule (Brains)
 
-Epoch 1 (Months 0â2): 20% unlocked â 6,000,000 BIT  
-Epoch 2 (Months 2â4): 40% unlocked â 12,000,000 BIT  
-Epoch 3 (Months 4â6): 60% unlocked â 18,000,000 BIT  
-Epoch 4 (Months 6â8): 80% unlocked â 24,000,000 BIT  
-Epoch 5 (Months 8â10): 100% unlocked â 30,000,000 BIT  
+Epoch 1 
+Epoch 2  
+Epoch 3  50% unlocked 15,000,000 BIT
+Epoch 4 
+Epoch 5 100% unlocked 15,000,000 BIT
+
+Total BIT unlocked evenly amongst 1000 Brain participants. 
+If 100% BIT rewards are staked throughout the Brain evolution,
+rewards will be 2 Cerebral for next stage accumalitive...
+
+
 
 ---
 

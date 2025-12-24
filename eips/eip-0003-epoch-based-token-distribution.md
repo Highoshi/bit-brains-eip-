@@ -3,6 +3,7 @@
 ## Title: Epoch-Based Token Distribution and Unlock Framework (Brains)
 
 Author: Alex Diaz  
+Developer: OnGod
 Status: Draft  
 Type: Standards Track  
 Created: 2025-12-21  

@@ -1,7 +1,3 @@
-export const metadata = {
-  title: "BitBrains",
-  description: "BitBrains Protocol",
-};
 
 export default function RootLayout({
   children,

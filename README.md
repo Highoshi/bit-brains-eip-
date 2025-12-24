@@ -33,6 +33,17 @@ Proof of Care is the canonical participation and reward mechanism of the Bit Bra
 
 It defines how real-world contribution, continuity, and stewardship are recognized **without relying on surveillance, custodial control, or extractive behavioral tracking**.
 
+### Scope and Disclosure
+
+This repository defines Proof of Care **at the protocol and standards level only**.
+
+- Scoring models
+- Heuristics
+- App-level implementations
+- Proprietary optimization logic
+
+are intentionally excluded and maintained as private intellectual property.
+
 ### Core Principles
 
 - Participation is voluntary and opt-in

@@ -138,8 +138,6 @@ The contents of this repository are intended to be implemented, deployed, and ex
 
 This repository defines **protocol-level specifications, standards, and canonical logic**.
 
-Smart contract behavior, state transitions, and verification rules **are specified at the standard level**, but concrete implementations are expected to live in separate repositories once specifications mature, are audited, and are accepted.
-
 ---
 
 ## Current Status

@@ -1,164 +1,100 @@
-# EIP: 0003
-## Title: Epoch-Based Token Distribution and Unlock Framework (Brains)
+---EIP-0003: finalize token supply and distribution standard
 
-Author: Alex Diaz  
-Developer: OnGod  
-Status: Draft  
-Type: Standards Track  
-Created: 2025-12-21  
-Requires: EIP-0001, EIP-0002  
-
+Author: Bit Brains Protocol
+Developer: On God
+- Define fixed 200M max supply with no inflation
+- Introduce hard-capped 3-phase emissions (60M total)
+- Specify canonical allocations for treasury, team, ecosystem growth,
+  and NFT staking / Proof of Care rewards
+- Add optional extensions for exit penalties, NFT royalties, and ENS-based routing
+discussions-to: TBD
+status: Draft
+type: Standards Track
+category: Economic
+created: 2025-12-28
 ---
 
 ## Abstract
 
-This EIP defines the epoch-based distribution and unlock framework for the Bit Brains Intelligence Token (BIT) during the Brain stage of the Bit Brains protocol.
-
-Token availability is aligned with epoch completion, patience, and sustained participation rather than immediate liquidity or speculative access. Unlocks are progressive, cumulative, and irreversible.
-
-This EIP defines when BIT becomes available, not how influence or rewards are earned, and does not redefine total supply.
-
----
+EIP-0003 defines the fixed token supply, allocation, and phased emission schedule for the Bit Brains Protocol. This specification establishes a hard-capped supply, a three-phase emissions program that terminates permanently after Phase 3, and explicit allocations for protocol treasury, team, ecosystem growth, and NFT staking / Proof of Care continuity rewards.
 
 ## Motivation
 
-Early token distribution in decentralized protocols often favors short-term actors over long-term contributors, leading to premature extraction and misaligned incentives.
+Token launches frequently suffer from unclear allocation, inflationary drift, and premature liquidity extraction. EIP-0003 addresses these failures by enforcing a fixed maximum supply, capped emissions with no extensions, and treasury-held incentive pools aligned with long-term participation and protocol continuity.
 
-Bit Brains introduces an epoch-based unlock model to ensure that economic availability reflects sustained alignment with protocol values defined in EIP-0001 and participation mechanics defined in EIP-0002.
+## Specification
 
----
+### Total Supply
 
-## Definitions
+- **Maximum supply:** **200,000,000 tokens**
+- **Inflation:** None
+- **Additional emissions:** Not permitted beyond Phase 3
 
-**BIT (Bit Brains Intelligence Token):**  
-The native fungible token of the Bit Brains protocol.
+### Phase Emissions (Hard-Capped)
 
-**Brain:**  
-A Bit Brains NFT that may evolve into an Autonomous Intelligent Token (AIT) through epoch-based Proof-of-Care.
+Emissions occur across three complete phases with no mid-phase unlocks and no emissions after Phase 3.
 
-**Epoch:**  
-A fixed-duration accounting period used to measure participation and unlock availability.
+- **Phase 1:** 20,000,000 tokens
+- **Phase 2:** 20,000,000 tokens
+- **Phase 3:** 20,000,000 tokens
 
-**Cumulative Unlock:**  
-Unlocked tokens accumulate permanently and are never re-locked.
+**Total phase emissions:** **60,000,000 tokens (30%)**
 
-**RWA (Real World Asset):**  
-Within the Bit Brains protocol, a Real World Asset refers to a tokenized representation of sustained, verifiable, and continuous real-world contribution expressed through Proof-of-Care, participation integrity, and temporal commitment.
+There is no Phase 4 and no discretionary minting authority.
 
-RWA classification does not imply legal ownership of physical property, but rather economic recognition of real-world aligned effort embedded into protocol-native assets.
+### Allocation (Fully Accounted)
 
----
+All tokens are allocated at genesis and accounted for within the fixed supply.
 
-## Scope
+| Category | Tokens | % of Supply |
+|---|---:|---:|
+| Phase Emissions (3 phases) | 60,000,000 | 30% |
+| Treasury Reserve | 40,000,000 | 20% |
+| Team Allocation | 30,000,000 | 15% |
+| NFT Staking / Proof of Care Rewards (Treasury-held) | 40,000,000 | 20% |
+| Ecosystem Growth Treasury | 30,000,000 | 15% |
+| **TOTAL SUPPLY** | **200,000,000** | **100%** |
 
-This EIP applies exclusively to the Brain stage of the Bit Brains protocol.
+### Allocation Notes
 
-Cerebral and Brainiac token mechanics are not activated under this EIP and will be defined in future EIPs.
+**Treasury Reserve (20%)**  
+Held to support protocol solvency, stabilization mechanisms, governance-approved initiatives, and optional buyback or burn programs if adopted by governance.
 
----
+**Team Allocation (15%)**  
+Reserved for contributors and operators. Vesting or lock schedules, if applicable, MUST be defined by subsequent standards or governance resolutions.
 
-## Supply Parameters
+**NFT Staking / Proof of Care Rewards (20%, Treasury-held)**  
+A dedicated pool reserved for NFT staking rewards and Proof of Care continuity incentives. Distribution is eligibility-based and governed by protocol-defined reward mechanisms.
 
-**Total BIT Supply (Hard Cap): 200,000,000 BIT**
+**Ecosystem Growth Treasury (15%)**  
+Reserved for ecosystem expansion, including developer grants, partnerships, infrastructure, and adoption incentives.
 
-### Epoch-Governed Distribution (Brain Evolution)
+## Optional Extensions (Non-Normative)
 
-- Brain Stage Allocation: 30,000,000 BIT  
-- Cerebral Stage Allocation: 30,000,000 BIT (future)  
-- Brainiac Stage Allocation: 30,000,000 BIT (future)  
+The following mechanisms MAY be adopted via subsequent standards or governance but are not required by this EIP:
 
-**Total Epoch-Governed Distribution: 90,000,000 BIT**
+### Progressive Downstream Exit Penalty
+A phased penalty MAY apply to early exits or withdrawals:
+- Phase 1: 30%
+- Phase 2: 20%
+- Phase 3: 10%
 
-### Treasury Allocation and Protocol Development
+Penalties route to the Treasury Reserve.
 
-The remaining **110,000,000 BIT** are allocated to the protocol treasury.
+### NFT Secondary Royalties
+A baseline secondary royalty MAY be applied:
+- 3% total (1% Founder, 1% Artist, 1% Treasury)
 
-Treasury-held BIT is reserved exclusively for:
-- Ongoing and future protocol development  
-- Incentive rewards for staking and participation mechanisms  
-- Security, infrastructure, and operational sustainability  
-- Activation of future protocol upgrades defined in subsequent EIPs  
+### ENS-Based Reward Routing
+Reward eligibility and routing MAY require ENS resolution as the canonical identity layer, with optional zero-knowledge proofs for eligibility verification.
 
-Treasury allocations are not subject to epoch-based unlock schedules and are governed by protocol-level constraints and future governance processes.
+## Security and Economic Considerations
 
-This EIP governs only the Brain Stage allocation and distribution timing.
-
----
-
-## Epoch Parameters (Brains)
-
-Epoch Duration: approximately 1 month  
-Total Brain Epochs: 5  
-Total Brain Distribution: 30,000,000 BIT  
-Total Unlock Horizon: approximately 5 months  
-
----
-
-## Epoch-Based Unlock Schedule (Brains)
-
-Epoch 1  
-Epoch 2  
-
-Epoch 3:  
-- 50% unlocked (15,000,000 BIT)
-
-Epoch 4  
-
-Epoch 5:  
-- 100% unlocked (30,000,000 BIT cumulative)
-
-Total BIT is unlocked evenly amongst 1,000 Brain participants.
-
-If 100% of BIT rewards are staked throughout the Brain evolution, accumulated rewards qualify participants for Cerebral-stage progression on a cumulative basis, as defined in future EIPs.
-
----
-
-## Autonomous Intelligent Token (AIT) and Real-World Alignment
-
-An Autonomous Intelligent Token (AIT) emerging from a Brain NFT is considered a real-world-aligned asset upon completion of the Brain stage, contingent on sustained Proof-of-Care and continuity intake across defined epochs.
-
-The real-world alignment of an AIT is derived from:
-- Verifiable longitudinal participation  
-- Irreversible epoch-based commitment  
-- Non-speculative maturation through time and care  
-- Deterministic evolution rather than discretionary minting  
-
-This framework positions AITs as economic representations of accumulated real-world effort, patience, and alignment rather than purely speculative digital instruments.
-
----
-
-## Unlock Mechanics
-
-Unlocks occur only at epoch boundaries.  
-Unlocked BIT remains permanently unlocked.  
-Token availability does not imply automatic distribution or yield.
-
----
-
-## Relationship to EIP-0002
-
-This EIP defines availability timing only.
-
-Proof-of-Care evaluation, influence, and reward eligibility are defined exclusively in EIP-0002.
-
----
-
-## Design Principles
-
-- Patience as an economic signal  
-- Progressive, predictable unlocks  
-- Public-first distribution  
-- Auditability and clarity  
-- Real-world alignment through time-bound participation  
-
----
-
-## Non-Goals
-
-This EIP does not define governance rights, yield formulas, treasury spending mechanisms, or downstream activation logic.
-
----
+- Fixed supply prevents inflationary dilution.
+- Hard-capped emissions reduce liquidity shock risk.
+- Treasury-held incentive pools prevent uncontrolled distribution.
+- Explicit accounting improves auditability and governance clarity.
 
 ## Copyright
 
-CC0
+Copyright and related rights waived via CC0.
